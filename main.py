@@ -43,7 +43,8 @@ import settings
 
 # ----- import add-on libraries -----
 
-import 
+import hydralit as hy
+import hydralit_components as hc
 
 # ----- load environment variables -----
 
@@ -60,4 +61,29 @@ messager.info(f"----- new {os.path.basename(__file__)} run -----")
 
 # because we are running in hydralit/streamlit; there isn't the typical 'if __main__ main()' paradigm
 
+# --- setup hydralit, hydralit navbar ---
 
+# create hydralit app
+app = hy.HydraApp(
+
+    # page title/favicon
+    title="david chan",
+    favicon="🔺",
+    
+    # theme configuration
+    navbar_theme={
+        'txc_inactive': '#FFFFFF',
+        'menu_background':'#C20101',
+        'txc_active':'#FFFFFF',
+        'option_active':'#F7F7F7'
+    },
+    # future feature: banner images?
+
+    # setting configuration
+    allow_url_nav=True,
+    sidebar_state="collapsed",
+    clear_cross_app_sessions=True,
+    
+)
+
+app.run()
