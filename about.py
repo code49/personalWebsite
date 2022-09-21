@@ -16,6 +16,22 @@ import hydralit_components as hc
 # package everything into a class for 
 def renderAbout():
 
+    """
+    
+    handles creating the streamlit/hydralit components for the 'about' page.
+
+    Parameters:
+    -----------
+
+    None
+
+    Returns:
+    --------
+
+    None
+
+    """
+
     # --- section 0: width warning ---
 
     # if 
