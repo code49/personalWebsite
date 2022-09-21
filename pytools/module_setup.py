@@ -34,7 +34,7 @@ def moduleSetup(module_list: list) -> None:
 
     print("module installation: checking previous installs.")
     
-    with open('./python_dev_tools/setup_status.json') as file:
+    with open('./pytools/setup_status.json') as file:
         data = json.load(file)
         
     if not data["module_setup_status"]:
@@ -113,12 +113,12 @@ def moduleSetup(module_list: list) -> None:
 
         # ----- update setup_status.json -----
 
-        with open('./python_dev_tools/setup_status.json', 'r') as file:
+        with open('./pytools/setup_status.json', 'r') as file:
             data = json.load(file)
         new_data = {
             "module_setup_status": True
         }
-        with open('./python_dev_tools/setup_status.json', 'w') as file:
+        with open('./pytools/setup_status.json', 'w') as file:
             data = json.dump(new_data, file)
 
         print("the project is now set up, you should not need to do this again.")
