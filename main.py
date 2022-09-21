@@ -43,6 +43,7 @@ import settings
 
 # ----- import add-on libraries -----
 
+import streamlit as st
 import hydralit as hy
 import hydralit_components as hc
 
