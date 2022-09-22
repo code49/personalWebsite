@@ -13,7 +13,7 @@ import hydralit_components as hc
 
 # ----- code -----
 
-# package everything into a class for 
+# page render function
 def renderAbout():
 
     """
