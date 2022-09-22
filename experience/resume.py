@@ -1,6 +1,6 @@
 """
 
-source code for the 'about' page of the webiste.
+source code for the 'resume' page of the webiste.
 
 """
 
