@@ -53,6 +53,8 @@ def renderFooter():
 
     """
 
+    st.write("") # for spacing
+    
     # horizontal rule
     st.markdown("---")
 
