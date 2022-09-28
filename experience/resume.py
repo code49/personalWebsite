@@ -63,5 +63,3 @@ class RenderResumePage(HydraHeadApp):
             data=PDFbyte,
             file_name='davidchan-resume.pdf'
         )
-
-    renderResume()
