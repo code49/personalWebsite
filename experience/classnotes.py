@@ -57,5 +57,3 @@ class RenderClassnotesPage(HydraHeadApp):
             border:0;"></iframe>""",
             unsafe_allow_html=True
         )
-
-    renderClassNotes()
