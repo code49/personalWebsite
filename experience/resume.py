@@ -8,56 +8,60 @@ source code for the 'resume' page of the webiste.
 
 # streamlit/hydralit
 import streamlit as st
-# import hydralit as hy # there's a bug with hydralit so disabling for now
 import hydralit_components as hc
+
+from hydralit import HydraHeadApp
 
 # other
 import base64 # encode pdf for display
 
 # ----- code -----
 
-# page render function
-def renderResume():
+# wrapper class
+class RenderResumePage(HydraHeadApp):
 
-    """
-    
-    handles creating the streamlit/hydralit components for the 'resume' page.
+    # page render function
+    def run(self):
 
-    Parameters:
-    -----------
+        """
+        
+        handles creating the streamlit/hydralit components for the 'resume' page.
 
-    None
+        Parameters:
+        -----------
 
-    Returns:
-    --------
+        None
 
-    None
+        Returns:
+        --------
 
-    """
+        None
 
-    # --- section 0: intro ---
+        """
 
-    st.write("Sometimes a short and concise resume is better. Here's mine!")
+        # --- section 0: intro ---
 
-    # --- section 1: display pdf version ---
+        st.write("Sometimes a short and concise resume is better. Here's mine!")
 
-    st.write("") # for spacing
+        # --- section 1: display pdf version ---
 
-    # show pdf
-    with open("./resources/experience/davidchan-resume.pdf", "rb") as f:
-            base64_pdf = base64.b64encode(f.read()).decode('utf-8')
-    pdf_display = f'<iframe src="data:application/pdf;base64,{base64_pdf}" width="1000" height="800" type="application/pdf"></iframe>'
-    st.markdown(pdf_display, unsafe_allow_html=True)
+        st.write("") # for spacing
 
-    # --- section 2: download button ---
+        # show pdf
+        with open("./resources/experience/davidchan-resume.pdf", "rb") as f:
+                base64_pdf = base64.b64encode(f.read()).decode('utf-8')
+        pdf_display = f'<iframe src="data:application/pdf;base64,{base64_pdf}" width="1000" height="800" type="application/pdf"></iframe>'
+        st.markdown(pdf_display, unsafe_allow_html=True)
 
-    with open("./resources/experience/davidchan-resume.pdf", "rb") as pdf_file:
-        PDFbyte = pdf_file.read()
+        # --- section 2: download button ---
 
-    st.download_button(
-        label="Download PDF",
-        data=PDFbyte,
-        file_name='davidchan-resume.pdf'
-    )
+        with open("./resources/experience/davidchan-resume.pdf", "rb") as pdf_file:
+            PDFbyte = pdf_file.read()
 
-renderResume()
+        st.download_button(
+            label="Download PDF",
+            data=PDFbyte,
+            file_name='davidchan-resume.pdf'
+        )
+
+    renderResume()
