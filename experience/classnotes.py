@@ -36,7 +36,11 @@ class RenderClassnotesPage(HydraHeadApp):
 
         """
 
-        # --- section 0: intro ---
+        # --- section 0: title ---
+
+        st.header("class notes:")
+
+        # --- section 1: intro ---
 
         st.write(
             """
@@ -46,7 +50,7 @@ class RenderClassnotesPage(HydraHeadApp):
             """
         )
 
-        # --- section 1: drive embed ---
+        # --- section 2: drive embed ---
 
         st.markdown(
             """
@@ -54,6 +58,11 @@ class RenderClassnotesPage(HydraHeadApp):
             src="https://drive.google.com/embeddedfolderview?id=1rv0GFVqEEd_-pZMyiA0ZV001Yg4GA_g7#list" 
             style="width:100%; 
             height:600px; 
-            border:0;"></iframe>""",
+            border:0;"></iframe>
+            """,
             unsafe_allow_html=True
         )
+
+#for testing purposes
+thing=RenderClassnotesPage()
+thing.run()
