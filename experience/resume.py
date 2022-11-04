@@ -39,27 +39,32 @@ class RenderResumePage(HydraHeadApp):
 
         """
 
-        # --- section 0: intro ---
+        # center everything
+        cols = st.columns([1, 5, 1])
 
-        st.write("Sometimes a short and concise resume is better. Here's mine!")
+        with cols[1]:
 
-        # --- section 1: display pdf version ---
+            # --- section 0: intro ---
 
-        st.write("") # for spacing
+            st.write("Sometimes a short and concise resume is better. Here's mine!")
 
-        # show pdf
-        with open("./resources/experience/davidchan-resume.pdf", "rb") as f:
-                base64_pdf = base64.b64encode(f.read()).decode('utf-8')
-        pdf_display = f'<iframe src="data:application/pdf;base64,{base64_pdf}" width="1000" height="800" type="application/pdf"></iframe>'
-        st.markdown(pdf_display, unsafe_allow_html=True)
+            # --- section 1: display pdf version ---
 
-        # --- section 2: download button ---
+            st.write("") # for spacing
 
-        with open("./resources/experience/davidchan-resume.pdf", "rb") as pdf_file:
-            PDFbyte = pdf_file.read()
+            # show pdf
+            with open("./resources/experience/davidchan-resume.pdf", "rb") as f:
+                    base64_pdf = base64.b64encode(f.read()).decode('utf-8')
+            pdf_display = f'<iframe src="data:application/pdf;base64,{base64_pdf}" width="1000" height="800" type="application/pdf"></iframe>'
+            st.markdown(pdf_display, unsafe_allow_html=True)
 
-        st.download_button(
-            label="Download PDF",
-            data=PDFbyte,
-            file_name='davidchan-resume.pdf'
-        )
+            # --- section 2: download button ---
+
+            with open("./resources/experience/davidchan-resume.pdf", "rb") as pdf_file:
+                PDFbyte = pdf_file.read()
+
+            st.download_button(
+                label="Download PDF",
+                data=PDFbyte,
+                file_name='davidchan-resume.pdf'
+            )

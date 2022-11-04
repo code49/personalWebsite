@@ -96,6 +96,9 @@ if __name__ == '__main__':
         allow_url_nav=True,
         sidebar_state="collapsed",
         clear_cross_app_sessions=True,
+        hide_streamlit_markers=True,
+        use_navbar=True, 
+        navbar_sticky=True
         
     )
 
