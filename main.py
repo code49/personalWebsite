@@ -43,6 +43,7 @@ import settings
 
 # ----- import add-on libraries -----
 
+import streamlit as st
 import hydralit as hy
 import hydralit_components as hc
 
@@ -59,31 +60,129 @@ messager.info(f"----- new {os.path.basename(__file__)} run -----")
 
 # ----- code -----
 
-# because we are running in hydralit/streamlit; there isn't the typical 'if __main__ main()' paradigm
+if __name__ == '__main__':
 
-# --- setup hydralit, hydralit navbar ---
+    # --- setup streamlit, hydralit, hydralit navbar ---
 
-# create hydralit app
-app = hy.HydraApp(
+    # setup streamlit page configuration
+    st.set_page_config(
+        page_title="david chan",
+        page_icon="🚋",
+        layout="wide",
+        initial_sidebar_state="collapsed",
+        menu_items={
+            "Report a Bug": "mailto:davidlechan@gmail.com", #bug report url; setting this to email address
+            "About": "I'm David, an ECE student. This is a website dedicated to some of the neat things I've been able to do over the years!"
+        },
+    )
 
-    # page title/favicon
-    title="david chan",
-    favicon="🔺",
+    # create hydralit app
+    app = hy.HydraApp(
+
+        # page title/favicon
+        title="david chan",
+        favicon="🔺",
+        
+        # theme configuration
+        navbar_theme={
+            'txc_inactive': '#FFFFFF',
+            'menu_background':'#C20101',
+            'txc_active':'#000000',
+            'option_active':'#F7F7F7'
+        },
+
+        # setting configuration
+        allow_url_nav=True,
+        sidebar_state="collapsed",
+        clear_cross_app_sessions=True,
+        hide_streamlit_markers=True,
+        use_navbar=True, 
+        
+    )
+
+    # --- setup hydralit paging ---
+
+    # - wrapper class imports - 
+
+    # about
+    from about.about import RenderAboutPage
+
+    # education
+    from education.classnotes import RenderClassnotesPage
+    from education.cmu import RenderCarnegiePage
+    from education.nueva import RenderNuevaPage
+
+    # experience
+    from experience.projects import RenderProjectsPage
+    from experience.resume import RenderResumePage
+    from experience.tau import RenderTauPage
+    from experience.ucsf_bchsi import RenderUCSFBakarPage
+    from experience.vestaboard import RenderVestaboardPage
+
+    # home page
+    from homepage.homepage import RenderHomePage
+
+    # - add sub-pages as apps to the main app -
+
+    # home
+    app.add_app(
+        title="home",
+        app=RenderHomePage()
+    )
+
+    # experience
+    app.add_app(
+        title="projects",
+        app=RenderProjectsPage()
+    )
     
-    # theme configuration
-    navbar_theme={
-        'txc_inactive': '#FFFFFF',
-        'menu_background':'#C20101',
-        'txc_active':'#FFFFFF',
-        'option_active':'#F7F7F7'
-    },
-    # future feature: banner images?
+    app.add_app(
+        title="resume",
+        app=RenderResumePage()
+    )
 
-    # setting configuration
-    allow_url_nav=True,
-    sidebar_state="collapsed",
-    clear_cross_app_sessions=True,
-    
-)
+    app.add_app(
+        title="tau",
+        app=RenderTauPage()
+    )
 
-app.run()
+    app.add_app(
+        title="ucsf bakar",
+        app=RenderUCSFBakarPage()
+    )
+
+    app.add_app(
+        title="vestaboard",
+        app=RenderVestaboardPage()
+    )
+
+    # education
+    app.add_app(
+        title="classnotes",
+        app=RenderClassnotesPage()
+    )
+
+    app.add_app(
+        title="nueva",
+        app=RenderResumePage()
+    )
+
+    app.add_app(
+        title="carnegie mellon",
+        app=RenderCarnegiePage()
+    )
+
+    # about
+    app.add_app(
+        title="about",
+        app=RenderAboutPage()
+    )
+
+    complex_nav = {
+        "home 🏠": ["home"],
+        "experience 🌄": ["resume", "tau", "vestaboard", "ucsf bakar", "projects"],
+        "education ✏️": ["carnegie mellon", "nueva", "classnotes"],
+        "about 👨‍💻": ["about"]
+    }
+
+    app.run(complex_nav)

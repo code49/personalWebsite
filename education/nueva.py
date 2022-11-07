@@ -134,6 +134,6 @@ class RenderNuevaPage(HydraHeadApp):
         )
 
 
-#for testing purposes
-thing=RenderNuevaPage()
-thing.run()
+# #for testing purposes
+# thing=RenderNuevaPage()
+# thing.run()
