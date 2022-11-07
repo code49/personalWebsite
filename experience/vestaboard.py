@@ -70,16 +70,38 @@ class RenderVestaboardPage(HydraHeadApp):
             """
             I worked at Vestaboard to implement Word-Of-The-Day, an "installable" (plugins that control
             the board, automatically collecting data from the internet to generate messages) that polled the 
-            English Oxford Dictionary's word of the day to display to the board. Creating my installable
-            required that I write many new features, including RSS feeds, pagination (getting the server
-            to queue and send a group of messages in order, since definitions took more space than a single 'frame'
-            on the board), and progress bars.
+            English Oxford Dictionary's word of the day to display to the board using a combination of PHP and JavaScript. 
+            Creating my installable required that I write many new features, including RSS feeds, pagination 
+            (getting the server to queue and send a group of messages in order, since definitions took 
+            more space than a single 'frame' on the board), and progress bars.
             """
         )
 
         st.image("./resources/experience/vestaboard_improvements.png")
 
+        # --- section 3: non-technical learnings ---
 
+        st.write(
+            """
+            At Vestaboard, I not only got to learn web development concepts (using a LAMP stack) and a new 
+            programming language, PHP. Additionally, it was my first taste of small-scale startup culture, where
+            I got to experience the thrilling ups and downs of early businesses, see how executives manage a team and 
+            find other companies to work together with, and learn the importance of taking initiative to create
+            proof of concepts of my ideas in order to more easily convince others.
+            """
+        )
+
+        # --- section 4: skills used ---
+
+        st.write(
+            """
+            _skills I used:_
+
+            - LAMP Web Development Stack
+                - Linux/Apache/PHP Laravel backend
+                - JavaScript + jQuery frontend
+            """
+        )
 
 # for testing purposes
 thing = RenderVestaboardPage()
