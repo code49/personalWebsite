@@ -41,7 +41,13 @@ class RenderResumePage(HydraHeadApp):
 
         # --- section 0: title ---
 
-        st.header("resume:")
+        st.write(
+            """
+            ## resume
+        
+            ---
+            """
+        )
 
         # --- section 1: intro ---
 
