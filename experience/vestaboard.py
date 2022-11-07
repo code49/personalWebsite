@@ -62,7 +62,8 @@ class RenderVestaboardPage(HydraHeadApp):
             all the smarts of modern day technology. Users can use their Vestaboard to write a message to their 
             kids when away on business, see live sports scores, even be inspired by quotes from celebrities 
             and influencers.
-            """)
+            """
+        )
 
         # --- section 2: what I did ---
 
