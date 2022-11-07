@@ -125,6 +125,6 @@ class RenderUCSFBakarPage(HydraHeadApp):
             """
         )
 
-# for testing purposes
-thing = RenderUCSFBakarPage()
-thing.run()
+# # for testing purposes
+# thing = RenderUCSFBakarPage()
+# thing.run()

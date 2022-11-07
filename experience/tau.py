@@ -115,6 +115,6 @@ class RenderTauPage(HydraHeadApp):
             """
         )
 
-# for testing purposes
-thing = RenderTauPage()
-thing.run()
+# # for testing purposes
+# thing = RenderTauPage()
+# thing.run()

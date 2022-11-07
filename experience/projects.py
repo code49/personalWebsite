@@ -142,6 +142,6 @@ class RenderProjectsPage(HydraHeadApp):
             """
         )
 
-# for testing purpsoes
-thing = RenderProjectsPage()
-thing.run()
+# # for testing purpsoes
+# thing = RenderProjectsPage()
+# thing.run()

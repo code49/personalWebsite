@@ -50,5 +50,5 @@ class RenderHomePage(HydraHeadApp):
             """
         )
 
-thingy = RenderHomePage()
-thingy.run()
+# thingy = RenderHomePage()
+# thingy.run()
