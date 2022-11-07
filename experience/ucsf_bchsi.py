@@ -99,12 +99,24 @@ class RenderUCSFBakarPage(HydraHeadApp):
             """
         )
 
-        # --- section 3: skills used ---
+        # --- section 3: non-technical learnings ---
+
+        st.write(
+            """
+            Aside from using data libraries such as pandas and numpy on a large scale for the first time, my time at
+            UCSF also allowed me to get a first-hand look at the forefront of computational biology research, as well
+            as the dynamics within a large research institution such as UCSF. It was fantastic seeing how the tools I
+            had learned about in class translated into solving real-world problems, and how a diverse group of developers,
+            researchers, even doctors can come together to work towards a collective end goal.
+            """
+        )
+
+        # --- section 4: skills used ---
 
         st.markdown(
             """
             ---
-            skills:
+            _skills I used:_
             
             - Python
                 - pandas
