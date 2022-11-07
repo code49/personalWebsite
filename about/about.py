@@ -8,7 +8,7 @@ source code for the 'about' page of the webiste.
 
 # streamlit/hydralit
 import streamlit as st
-# import hydralit as hy # there's a bug with hydralit so disabling for now
+import hydralit as hy # there's a bug with hydralit so disabling for now
 import hydralit_components as hc
 
 # ----- code -----
