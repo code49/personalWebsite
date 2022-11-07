@@ -45,7 +45,7 @@ class RenderVestaboardPage(HydraHeadApp):
             """
             ## Vestaboard
             _paid programming intern_ \n
-            _June - August 2021_
+            _April - August 2021_
             
             ---
             """
