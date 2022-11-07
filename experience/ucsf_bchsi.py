@@ -44,6 +44,7 @@ class RenderUCSFBakarPage(HydraHeadApp):
         st.markdown(
             """
             ## UCSF BCHSI:
+            _unpaid programming intern_
             _June - August 2020_
             """
         )
