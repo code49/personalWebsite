@@ -1,0 +1,15 @@
+[logger]
+level = "info"
+
+[client]
+# displayEnabled = false # only True for production
+
+[server]
+runOnSave = true
+
+[theme]
+primaryColor = "#C20101"
+backgroundColor = "#F7F7F7"
+secondaryBackgroundColor = "#EEE4E4"
+textColor = "#000000"
+font = "sans serif"
