@@ -32,9 +32,11 @@ def renderAbout():
 
     """
 
-    # --- section 0: width warning ---
+    # --- section 0: title ---
 
-    # if 
+    columns = st.columns([1, 7, 1]) # 2, 2 margins on the edges
+    with columns[1]:
+        st.header("about me :)")
 
     # --- section 1: intro ---
 
