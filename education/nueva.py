@@ -69,7 +69,7 @@ class RenderNuevaPage(HydraHeadApp):
 
         st.write(
             """
-            Here's a list of the classes I took there, organized by subject area:
+            Here's a list of the classes I took there, organised by subject area:
 
             - Programming
                 - CS320: Advanced Machine Learning
