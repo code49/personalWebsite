@@ -110,7 +110,7 @@ class RenderTauPage(HydraHeadApp):
                 - KiCAD (PCB development software)
                 - solder masks and placing surface mount electronics components
                 - reflow ovens (circuit board construction)
-                - testing methodologies for high voltage circuits (as well as what equipment is used)
+                - testing methodologies for high voltage circuits
                 - "advanced" EE concepts, such as complex impedance
             """
         )
