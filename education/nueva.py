@@ -1,6 +1,6 @@
 """
 
-source code for the 'class notes' page of the webiste.
+source code for the 'nueva' page of the webiste.
 
 """
 
