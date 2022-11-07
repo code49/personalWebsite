@@ -1,6 +1,6 @@
 """
 
-source code for the 'ucsf bchsi' page of the webiste.
+source code for the 'vestaboard' page of the webiste.
 
 """
 
