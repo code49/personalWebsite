@@ -71,7 +71,7 @@ class RenderNuevaPage(HydraHeadApp):
             """
             Here's a list of the classes I took there, organised by subject area:
 
-            - Programming
+            - Programming/Computer Science
                 - CS320: Advanced Machine Learning
                 - CS310: Introduction to Machine Learning
                 - CS240: Computer Security
