@@ -110,5 +110,6 @@ class RenderAboutPage(HydraHeadApp):
             """
         )
 
+#for testing purposes
 thingy = RenderAboutPage()
-thingy.run()
+thingy.run() 
