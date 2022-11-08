@@ -12,9 +12,6 @@ import hydralit_components as hc
 
 from hydralit import HydraHeadApp
 
-# other
-import base64 # encode pdf for display
-
 # ----- code -----
 
 # wrapper class
