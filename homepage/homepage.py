@@ -49,6 +49,7 @@ class RenderHomePage(HydraHeadApp):
             Feel free to navigate around using the above bar, and I'd appreciate any feedback/ideas as well!
             """
         )
-
+        
+# for testing purposes:
 # thingy = RenderHomePage()
 # thingy.run()
