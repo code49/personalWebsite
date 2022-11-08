@@ -47,6 +47,10 @@ import streamlit as st
 import hydralit as hy
 import hydralit_components as hc
 
+# ----- import other files -----
+
+from footer import renderFooter
+
 # ----- load environment variables -----
 
 settings = settings.getSettings([])
@@ -71,7 +75,7 @@ if __name__ == '__main__':
         layout="wide",
         initial_sidebar_state="collapsed",
         menu_items={
-            "Report a Bug": "mailto:davidlechan@gmail.com", #bug report url; setting this to email address
+            # "Report a Bug": "mailto:davidlechan@gmail.com", #bug report url; setting this to email address
             "About": "I'm David, an ECE student. This is a website dedicated to some of the neat things I've been able to do over the years!"
         },
     )
@@ -96,8 +100,9 @@ if __name__ == '__main__':
         sidebar_state="collapsed",
         clear_cross_app_sessions=True,
         hide_streamlit_markers=True,
-        use_navbar=True, 
-        
+        use_navbar=True,
+        navbar_animation=False,
+        navbar_sticky=False
     )
 
     # --- setup hydralit paging ---
@@ -126,7 +131,7 @@ if __name__ == '__main__':
 
     # home
     app.add_app(
-        title="home",
+        title="home 🏠",
         app=RenderHomePage()
     )
 
@@ -164,7 +169,7 @@ if __name__ == '__main__':
 
     app.add_app(
         title="nueva",
-        app=RenderResumePage()
+        app=RenderNuevaPage()
     )
 
     app.add_app(
@@ -174,15 +179,19 @@ if __name__ == '__main__':
 
     # about
     app.add_app(
-        title="about",
+        title="about 👨‍💻",
         app=RenderAboutPage()
     )
 
     complex_nav = {
-        "home 🏠": ["home"],
+        "home": ["home 🏠"],
         "experience 🌄": ["resume", "tau", "vestaboard", "ucsf bakar", "projects"],
         "education ✏️": ["carnegie mellon", "nueva", "classnotes"],
-        "about 👨‍💻": ["about"]
+        "about": ["about 👨‍💻"]
     }
 
+    # show navbar + app content
     app.run(complex_nav)
+
+    # show footer
+    renderFooter()
