@@ -41,8 +41,7 @@ class RenderVestaboardPage(HydraHeadApp):
         st.markdown(
             """
             ## Vestaboard
-            _paid programming intern_ \n
-            _April - August 2021_
+            _paid programming intern, April - August 2021_
             
             ---
             """
