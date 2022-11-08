@@ -43,6 +43,7 @@ import settings
 
 # ----- import add-on libraries -----
 
+import streamlit as st
 import hydralit as hy
 import hydralit_components as hc
 
@@ -59,31 +60,66 @@ messager.info(f"----- new {os.path.basename(__file__)} run -----")
 
 # ----- code -----
 
-# because we are running in hydralit/streamlit; there isn't the typical 'if __main__ main()' paradigm
+if __name__ == '__main__':
 
-# --- setup hydralit, hydralit navbar ---
+    # --- setup streamlit, hydralit, hydralit navbar ---
 
-# create hydralit app
-app = hy.HydraApp(
+    # setup streamlit page configuration
+    st.set_page_config(
+        page_title="david chan",
+        page_icon="🚋",
+        layout="wide",
+        initial_sidebar_state="collapsed",
+        menu_items={
+            "Report a Bug": "mailto:davidlechan@gmail.com", #bug report url; setting this to email address
+            "About": "I'm David, an ECE student. This is a website dedicated to some of the neat things I've been able to do over the years!"
+        },
+    )
 
-    # page title/favicon
-    title="david chan",
-    favicon="🔺",
-    
-    # theme configuration
-    navbar_theme={
-        'txc_inactive': '#FFFFFF',
-        'menu_background':'#C20101',
-        'txc_active':'#FFFFFF',
-        'option_active':'#F7F7F7'
-    },
-    # future feature: banner images?
+    # create hydralit app
+    app = hy.HydraApp(
 
-    # setting configuration
-    allow_url_nav=True,
-    sidebar_state="collapsed",
-    clear_cross_app_sessions=True,
-    
-)
+        # page title/favicon
+        title="david chan",
+        favicon="🔺",
+        
+        # theme configuration
+        navbar_theme={
+            'txc_inactive': '#FFFFFF',
+            'menu_background':'#C20101',
+            'txc_active':'#000000',
+            'option_active':'#F7F7F7'
+        },
+        # future feature: banner images?
 
-app.run()
+        # setting configuration
+        allow_url_nav=True,
+        sidebar_state="collapsed",
+        clear_cross_app_sessions=True,
+        hide_streamlit_markers=True,
+        use_navbar=True, 
+        navbar_sticky=True
+        
+    )
+
+    # --- setup hydralit paging ---
+
+    # wrapper class imports
+    from experience.classnotes import RenderClassnotesPage
+    from experience.resume import RenderResumePage
+
+    # add sub-pages as apps to the main app
+
+    app.add_app(
+        title="classnotes",
+        icon="✏️",
+        app=RenderClassnotesPage()
+    )
+
+    app.add_app(
+        title="resume",
+        icon="📜",
+        app=RenderResumePage()
+    )
+
+    app.run()
