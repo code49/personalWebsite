@@ -25,7 +25,10 @@ dev_mode = True
 
 # ----- messager setup -----
 
-messager = messagerSetup(dev_mode=True, run_erase=False)
+# messager = messagerSetup(
+#     dev_mode=dev_mode, 
+#     run_erase=True
+# )
 
 # ----- module setup -----
 
@@ -57,10 +60,10 @@ settings = settings.getSettings([])
 
 # ----- completion message -----
 
-clear()
+# clear()
 time.sleep(1)
-messager.info("setup complete.")
-messager.info(f"----- new {os.path.basename(__file__)} run -----")
+# messager.info("setup complete.")
+# messager.info(f"----- new {os.path.basename(__file__)} run -----")
 
 # ----- code -----
 
