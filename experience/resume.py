@@ -60,7 +60,7 @@ class RenderResumePage(HydraHeadApp):
         # show pdf
         with open("./resources/experience/davidchan-resume.pdf", "rb") as f:
                 base64_pdf = base64.b64encode(f.read()).decode('utf-8')
-        pdf_display = f'<iframe src="data:application/pdf;base64,{base64_pdf}" width="1000" height="800" type="application/pdf"></iframe>'
+        pdf_display = f'<iframe src="data:application/pdf;base64,{base64_pdf}" width="730" height="800" type="application/pdf"></iframe>'
         st.markdown(pdf_display, unsafe_allow_html=True)
 
         # --- section 3: download button ---
