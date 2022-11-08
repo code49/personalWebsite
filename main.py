@@ -75,7 +75,7 @@ if __name__ == '__main__':
     st.set_page_config(
         page_title="david chan",
         page_icon="🚋",
-        layout="wide",
+        layout="centered",
         initial_sidebar_state="collapsed",
         menu_items={
             # "Report a Bug": "mailto:davidlechan@gmail.com", #bug report url; setting this to email address
@@ -105,7 +105,7 @@ if __name__ == '__main__':
         hide_streamlit_markers=True,
         use_navbar=True,
         navbar_animation=False,
-        navbar_sticky=False
+        navbar_sticky=True
     )
 
     # --- setup hydralit paging ---
