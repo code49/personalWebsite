@@ -16,8 +16,8 @@ import os
 # ----- import tool libraries from pytools
 
 # import the setup routine to be run
-from pytools.module_setup import moduleSetup
-from pytools.messager import messagerSetup, clear, horizontalRule
+# from pytools.module_setup import moduleSetup
+# from pytools.messager import messagerSetup, clear, horizontalRule
 
 # ----- define developer mode setting -----
 
@@ -39,10 +39,10 @@ module_list = [
     "hydralit",
     "hydralit_components"
 ]
-moduleSetup(module_list)
+# moduleSetup(module_list)
 
 # now that dotenv is ensured, import settings
-import settings
+# import settings
 
 # ----- import add-on libraries -----
 
@@ -56,12 +56,12 @@ from footer import renderFooter
 
 # ----- load environment variables -----
 
-settings = settings.getSettings([])
+# settings = settings.getSettings([])
 
 # ----- completion message -----
 
 # clear()
-time.sleep(1)
+# time.sleep(1)
 # messager.info("setup complete.")
 # messager.info(f"----- new {os.path.basename(__file__)} run -----")
 
