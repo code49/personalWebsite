@@ -83,6 +83,6 @@ class RenderCarnegiePage(HydraHeadApp):
         )
 
 
-#for testing purposes
-thing=RenderCarnegiePage()
-thing.run()
+# #for testing purposes
+# thing=RenderCarnegiePage()
+# thing.run()

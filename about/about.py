@@ -110,5 +110,5 @@ class RenderAboutPage(HydraHeadApp):
             """
         )
 
-thingy = RenderAboutPage()
-thingy.run()
+# thingy = RenderAboutPage()
+# thingy.run()

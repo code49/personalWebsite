@@ -74,6 +74,6 @@ class RenderResumePage(HydraHeadApp):
             file_name='davidchan-resume.pdf'
         )
 
-# for testing purpsoes
-thing = RenderResumePage()
-thing.run()
+# # for testing purpsoes
+# thing = RenderResumePage()
+# thing.run()

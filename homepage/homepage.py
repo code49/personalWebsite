@@ -48,7 +48,7 @@ class RenderHomePage(HydraHeadApp):
                 This site is meant as a catalogue of all the projects I've done,
                 as well as a way for me to look back at all the neat experiences I've had, fantastic people I've met,
                 and valuable lessons I've learned over the years. 
-
+                
                 Feel free to navigate around using the above bar, and I'd appreciate any feedback/ideas as well!
                 """
             )

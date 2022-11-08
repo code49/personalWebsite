@@ -1,6 +1,6 @@
 """
 
-function definitions for creating standardised header and footers to streamlit/hydralit pages.
+function definitions for creating standardised footers to streamlit/hydralit pages.
 
 """
 
@@ -13,26 +13,6 @@ import hydralit_components as hc
 
 # ----- code -----
 
-# page header render function
-def renderHeader():
-
-    """
-
-    handles creating the streamlit/hydralit components for the header section of each page.
-    
-    Parameters:
-    -----------
-
-    None
-
-    Returns:
-    --------
-
-    None
-
-    """
-
-    pass
 
 # page footer render function
 def renderFooter():
@@ -52,8 +32,6 @@ def renderFooter():
     None
 
     """
-
-    st.write("") # for spacing
     
     # horizontal rule
     st.markdown("---")
@@ -72,37 +50,35 @@ def renderFooter():
     st.markdown(
         """
         <p style='text-align: center; color: grey;'> <span style="font-size: 15px">
-        David Le Chan
-        </span></p>
-        """, 
-        unsafe_allow_html=True
-    )
-    st.markdown(
-        """
-        <p style='text-align: center; color: grey;'> <span style="font-size: 15px">
-        davidlechan@gmail.com
-        </span></p>
-        """, 
-        unsafe_allow_html=True
-    )
-    st.markdown(
-        """
-        <p style='text-align: center; color: grey;'> <span style="font-size: 15px">
-        +1 (650) - 383 - 8954
-        </span></p>
-        """, 
-        unsafe_allow_html=True
-    )
-    st.markdown(
-        """
-        <p style='text-align: center; color: grey;'> <span style="font-size: 15px">
+        David Le Chan<br>
+        davidlechan@gmail.com<br>
+        +1 (650)-383-8954<br>
         <a href="https://linkedin.com/in/david-le-chan"> linkedin.com/in/david-le-chan </a>
         </span></p>
         """, 
         unsafe_allow_html=True
     )
-    
-
-    
-
-renderFooter()
+    # st.markdown(
+    #     """
+    #     <p style='text-align: center; color: grey;'> <span style="font-size: 15px">
+    #     davidlechan@gmail.com
+    #     </span></p>
+    #     """, 
+    #     unsafe_allow_html=True
+    # )
+    # st.markdown(
+    #     """
+    #     <p style='text-align: center; color: grey;'> <span style="font-size: 15px">
+    #     +1 (650) - 383 - 8954
+    #     </span></p>
+    #     """, 
+    #     unsafe_allow_html=True
+    # )
+    # st.markdown(
+    #     """
+    #     <p style='text-align: center; color: grey;'> <span style="font-size: 15px">
+    #     <a href="https://linkedin.com/in/david-le-chan"> linkedin.com/in/david-le-chan </a>
+    #     </span></p>
+    #     """, 
+    #     unsafe_allow_html=True
+    # )

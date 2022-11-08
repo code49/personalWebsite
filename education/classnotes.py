@@ -58,4 +58,7 @@ class RenderClassnotesPage(HydraHeadApp):
             unsafe_allow_html=True
         )
 
-    renderClassNotes()
+
+# #for testing purposes
+# thingy = RenderClassnotesPage()
+# thingy.run()

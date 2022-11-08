@@ -47,6 +47,10 @@ import streamlit as st
 import hydralit as hy
 import hydralit_components as hc
 
+# ----- import other files -----
+
+from footer import renderFooter
+
 # ----- load environment variables -----
 
 settings = settings.getSettings([])
@@ -71,7 +75,7 @@ if __name__ == '__main__':
         layout="wide",
         initial_sidebar_state="collapsed",
         menu_items={
-            "Report a Bug": "mailto:davidlechan@gmail.com", #bug report url; setting this to email address
+            # "Report a Bug": "mailto:davidlechan@gmail.com", #bug report url; setting this to email address
             "About": "I'm David, an ECE student. This is a website dedicated to some of the neat things I've been able to do over the years!"
         },
     )
@@ -90,36 +94,104 @@ if __name__ == '__main__':
             'txc_active':'#000000',
             'option_active':'#F7F7F7'
         },
-        # future feature: banner images?
 
         # setting configuration
         allow_url_nav=True,
         sidebar_state="collapsed",
         clear_cross_app_sessions=True,
         hide_streamlit_markers=True,
-        use_navbar=True, 
-        navbar_sticky=True
-        
+        use_navbar=True,
+        navbar_animation=False,
+        navbar_sticky=False
     )
 
     # --- setup hydralit paging ---
 
-    # wrapper class imports
-    from experience.classnotes import RenderClassnotesPage
-    from experience.resume import RenderResumePage
+    # - wrapper class imports - 
 
-    # add sub-pages as apps to the main app
+    # about
+    from about.about import RenderAboutPage
+
+    # education
+    from education.classnotes import RenderClassnotesPage
+    from education.cmu import RenderCarnegiePage
+    from education.nueva import RenderNuevaPage
+
+    # experience
+    from experience.projects import RenderProjectsPage
+    from experience.resume import RenderResumePage
+    from experience.tau import RenderTauPage
+    from experience.ucsf_bchsi import RenderUCSFBakarPage
+    from experience.vestaboard import RenderVestaboardPage
+
+    # home page
+    from homepage.homepage import RenderHomePage
+
+    # - add sub-pages as apps to the main app -
+
+    # home
+    app.add_app(
+        title="home 🏠",
+        app=RenderHomePage()
+    )
+
+    # experience
+    app.add_app(
+        title="projects",
+        app=RenderProjectsPage()
+    )
+    
+    app.add_app(
+        title="resume",
+        app=RenderResumePage()
+    )
 
     app.add_app(
+        title="tau",
+        app=RenderTauPage()
+    )
+
+    app.add_app(
+        title="ucsf bakar",
+        app=RenderUCSFBakarPage()
+    )
+
+    app.add_app(
+        title="vestaboard",
+        app=RenderVestaboardPage()
+    )
+
+    # education
+    app.add_app(
         title="classnotes",
-        icon="✏️",
         app=RenderClassnotesPage()
     )
 
     app.add_app(
-        title="resume",
-        icon="📜",
-        app=RenderResumePage()
+        title="nueva",
+        app=RenderNuevaPage()
     )
 
-    app.run()
+    app.add_app(
+        title="carnegie mellon",
+        app=RenderCarnegiePage()
+    )
+
+    # about
+    app.add_app(
+        title="about 👨‍💻",
+        app=RenderAboutPage()
+    )
+
+    complex_nav = {
+        "home": ["home 🏠"],
+        "experience 🌄": ["resume", "tau", "vestaboard", "ucsf bakar", "projects"],
+        "education ✏️": ["carnegie mellon", "nueva", "classnotes"],
+        "about": ["about 👨‍💻"]
+    }
+
+    # show navbar + app content
+    app.run(complex_nav)
+
+    # show footer
+    renderFooter()
