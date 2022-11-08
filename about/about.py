@@ -8,10 +8,6 @@ source code for the 'about' page of the webiste.
 
 # streamlit/hydralit
 import streamlit as st
-<<<<<<< HEAD
-import hydralit as hy # there's a bug with hydralit so disabling for now
-=======
->>>>>>> a64c35a138433d4de23705f5b4e5b843db9ed18a
 import hydralit_components as hc
 
 from hydralit import HydraHeadApp
@@ -49,10 +45,13 @@ class RenderAboutPage(HydraHeadApp):
 
         # --- section 1: intro ---
 
-        st.image(
-            image="./resources/about/portrait.jpg",
-            caption="that's me! thanks to my friend's mom for taking nice photos :)",
-        )
+        columns = st.columns([2, 5, 2])
+
+        with columns[1]:
+            st.image(
+                image="./resources/about/portrait.jpg",
+                caption="that's me! thanks to my friend's mom for taking nice photos :)",
+            )
 
         st.write(
             """
