@@ -12,15 +12,12 @@ import hydralit_components as hc
 
 from hydralit import HydraHeadApp
 
-# other
-import base64 # encode pdf for display
-
 # ----- code -----
 
 # wrapper class
 class RenderUCSFBakarPage(HydraHeadApp):
 
-    # page render function
+    # page render functionr
     def run(self):
 
         """
@@ -44,8 +41,7 @@ class RenderUCSFBakarPage(HydraHeadApp):
         st.markdown(
             """
             ## UCSF BCHSI
-            _unpaid programming intern_ \n
-            _June - August 2020_
+            _unpaid programming intern, June - August 2020_
             
             ---
             """

@@ -12,9 +12,6 @@ import hydralit_components as hc
 
 from hydralit import HydraHeadApp
 
-# other
-import base64 # encode pdf for display
-
 # ----- code -----
 
 # wrapper class
@@ -44,8 +41,7 @@ class RenderVestaboardPage(HydraHeadApp):
         st.markdown(
             """
             ## Vestaboard
-            _paid programming intern_ \n
-            _April - August 2021_
+            _paid programming intern, April - August 2021_
             
             ---
             """

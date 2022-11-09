@@ -12,9 +12,6 @@ import hydralit_components as hc
 
 from hydralit import HydraHeadApp
 
-# other
-import base64 # encode pdf for display
-
 # ----- code -----
 
 # wrapper class
@@ -44,8 +41,7 @@ class RenderTauPage(HydraHeadApp):
         st.markdown(
             """
             ## Tau Motors
-            _paid programming + electronics development intern_ \n
-            _June - August 2022_
+            _paid programming + electronics development intern, June - August 2022_
             
             ---
             """

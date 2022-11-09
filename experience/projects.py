@@ -12,9 +12,6 @@ import hydralit_components as hc
 
 from hydralit import HydraHeadApp
 
-# other
-import base64 # encode pdf for display
-
 # ----- code -----
 
 # wrapper class
@@ -58,7 +55,7 @@ class RenderProjectsPage(HydraHeadApp):
 
         # --- section 1: racecar ---
 
-        # st.image("./resources/experience/racecar.jpg")
+        st.image("./resources/experience/racecar.jpg")
 
         st.write(
             """
