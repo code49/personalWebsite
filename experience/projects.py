@@ -55,7 +55,7 @@ class RenderProjectsPage(HydraHeadApp):
 
         # --- section 1: racecar ---
 
-        # st.image("./resources/experience/racecar.jpg")
+        st.image("./resources/experience/racecar.jpg")
 
         st.write(
             """

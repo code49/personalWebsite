@@ -36,10 +36,14 @@ class RenderClassnotesPage(HydraHeadApp):
 
         """
 
-        # --- section 0: intro ---
+        # --- section 0: header + intro ---
 
         st.write(
             """
+            ## class notes
+
+            ---
+
             One of my more recent "mini" projects is creating an archive-style repository of all the notes/homework 
             from my classes, both so that I can look back on them later and so that others can use them in their own 
             studies. Feel free to look around!
