@@ -51,9 +51,10 @@ def renderFooter():
         """
         <p style='text-align: center; color: grey;'> <span style="font-size: 15px">
         David Le Chan<br>
-        davidlechan@gmail.com<br>
-        +1 (650)-383-8954<br>
-        <a href="https://linkedin.com/in/david-le-chan"> linkedin.com/in/david-le-chan </a>
+        david@davidlechan.dev<br>
+        +1 (650)-383-8954<br><br>
+        <a href="https://linkedin.com/in/david-le-chan"> LinkedIn </a><br>
+        <a href="https://github.com/code49"> GitHub </a>
         </span></p>
         """, 
         unsafe_allow_html=True
