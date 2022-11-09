@@ -45,10 +45,13 @@ class RenderAboutPage(HydraHeadApp):
 
         # --- section 1: intro ---
 
-        st.image(
-            image="./resources/about/portrait.jpg",
-            caption="that's me! thanks to my friend's mom for taking nice photos :)",
-        )
+        columns = st.columns([2, 5, 2])
+
+        with columns[1]:
+            st.image(
+                image="./resources/about/portrait.jpg",
+                caption="that's me! thanks to my friend's mom for taking nice photos :)",
+            )
 
         st.write(
             """
@@ -110,5 +113,6 @@ class RenderAboutPage(HydraHeadApp):
             """
         )
 
-# thingy = RenderAboutPage()
-# thingy.run()
+#for testing purposes
+thingy = RenderAboutPage()
+thingy.run() 
