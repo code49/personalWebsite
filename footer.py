@@ -46,39 +46,15 @@ def renderFooter():
         """, 
         unsafe_allow_html=True
     )
-    st.write("") # for spacing
     st.markdown(
         """
         <p style='text-align: center; color: grey;'> <span style="font-size: 15px">
         David Le Chan<br>
-        davidlechan@gmail.com<br>
-        +1 (650)-383-8954<br>
-        <a href="https://linkedin.com/in/david-le-chan"> linkedin.com/in/david-le-chan </a>
+        david@davidlechan.dev<br>
+        +1 (650)-383-8954<br><br>
+        <a href="https://linkedin.com/in/david-le-chan"> LinkedIn </a><br>
+        <a href="https://github.com/code49"> GitHub </a>
         </span></p>
         """, 
         unsafe_allow_html=True
     )
-    # st.markdown(
-    #     """
-    #     <p style='text-align: center; color: grey;'> <span style="font-size: 15px">
-    #     davidlechan@gmail.com
-    #     </span></p>
-    #     """, 
-    #     unsafe_allow_html=True
-    # )
-    # st.markdown(
-    #     """
-    #     <p style='text-align: center; color: grey;'> <span style="font-size: 15px">
-    #     +1 (650) - 383 - 8954
-    #     </span></p>
-    #     """, 
-    #     unsafe_allow_html=True
-    # )
-    # st.markdown(
-    #     """
-    #     <p style='text-align: center; color: grey;'> <span style="font-size: 15px">
-    #     <a href="https://linkedin.com/in/david-le-chan"> linkedin.com/in/david-le-chan </a>
-    #     </span></p>
-    #     """, 
-    #     unsafe_allow_html=True
-    # )
