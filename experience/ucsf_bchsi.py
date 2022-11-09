@@ -17,7 +17,7 @@ from hydralit import HydraHeadApp
 # wrapper class
 class RenderUCSFBakarPage(HydraHeadApp):
 
-    # page render function
+    # page render functionr
     def run(self):
 
         """
@@ -121,6 +121,6 @@ class RenderUCSFBakarPage(HydraHeadApp):
             """
         )
 
-# for testing purposes
-thing = RenderUCSFBakarPage()
-thing.run()
+# # for testing purposes
+# thing = RenderUCSFBakarPage()
+# thing.run()

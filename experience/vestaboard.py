@@ -100,6 +100,6 @@ class RenderVestaboardPage(HydraHeadApp):
             """
         )
 
-# for testing purposes
-thing = RenderVestaboardPage()
-thing.run()
+# # for testing purposes
+# thing = RenderVestaboardPage()
+# thing.run()

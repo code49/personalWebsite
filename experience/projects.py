@@ -55,7 +55,7 @@ class RenderProjectsPage(HydraHeadApp):
 
         # --- section 1: racecar ---
 
-        # st.image("./resources/experience/racecar.jpg")
+        st.image("./resources/experience/racecar.jpg")
 
         st.write(
             """
@@ -73,7 +73,7 @@ class RenderProjectsPage(HydraHeadApp):
 
         # --- section 2: project iginte ---
         
-        # st.image("./resources/experience/projectignite.png")
+        st.image("./resources/experience/projectignite.png")
 
         st.write(
             """
@@ -89,7 +89,7 @@ class RenderProjectsPage(HydraHeadApp):
 
         # --- section 3: spotipy ---
 
-        # st.image("./resources/experience/spotipy.png")
+        st.image("./resources/experience/spotipy.png")
 
         st.write(
             """
@@ -106,7 +106,7 @@ class RenderProjectsPage(HydraHeadApp):
 
         # --- section 4: COVID-19 book ---
 
-        # st.image("./resources/experience/lahm.jpg")
+        st.image("./resources/experience/lahm.jpg")
 
         st.write(
             """
@@ -122,7 +122,7 @@ class RenderProjectsPage(HydraHeadApp):
 
         # --- section 5: Taiwan ---
 
-        # st.image("./resources/experience/taiwan.jpg")
+        st.image("./resources/experience/taiwan.jpg")
 
         st.write(
             """
@@ -139,6 +139,6 @@ class RenderProjectsPage(HydraHeadApp):
             """
         )
 
-# for testing purpsoes
-thing = RenderProjectsPage()
-thing.run()
+# # for testing purpsoes
+# thing = RenderProjectsPage()
+# thing.run()
