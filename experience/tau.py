@@ -42,7 +42,8 @@ class RenderTauPage(HydraHeadApp):
             """
             ## Tau Motors
             _paid programming + electronics development intern, June - August 2022_
-            
+            [company website](https://www.taumotors.com/)
+
             ---
             """
         )

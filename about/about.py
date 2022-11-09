@@ -78,13 +78,14 @@ class RenderAboutPage(HydraHeadApp):
             and valuable lessons I've learned over the years. 
 
             It's built on ``streamlit`` and ``hydralit``, libraries for creating webpages in Python.
-            Technically, it's mostly meant for creating data visualisations and queries (which is
-            what I was building at Tau Motors, where I learned about these tools), but since when
+            Technically, it's mostly meant for creating data visualisations and queries, but since when
             did programmers use things the way they were intended? 
 
             That being said, because these libraries weren't really designed for full-scale web development,
             there are some design limitations. Hopefully more features will be added to streamlit/hydralit soon,
-            so that this site can finally act the way I want it to. 
+            so that this site can finally act more of the way I want it to. 
+
+            The site is hosted through Streamlit Cloud, then put through iframe magic on GitHub pages to show here.
 
             [Here](https://github.com/code49/personalWebsite) is the link to the GitHub repo for the 
             project if you want to take a look around. Feel free to contact me with suggestions/ideas!
@@ -107,9 +108,12 @@ class RenderAboutPage(HydraHeadApp):
             to work with you on, or anything else!
 
             Here's my contact info:
-            - davidlechan@gmail.com
+            - david@davidlechan.dev
             - +1 (650) - 383 - 8954 
-            - [linkedin.com/in/david-le-chan](https://linkedin.com/in/david-le-chan)
+
+            Also feel free to follow me:
+            - [LinkedIn](https://linkedin.com/in/david-le-chan)
+            - [GitHub](https://github.com/code49)
             """
         )
 
