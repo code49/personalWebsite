@@ -12,9 +12,6 @@ import hydralit_components as hc
 
 from hydralit import HydraHeadApp
 
-# other
-import base64 # encode pdf for display
-
 # ----- code -----
 
 # wrapper class
@@ -53,15 +50,12 @@ class RenderResumePage(HydraHeadApp):
 
         st.write("Sometimes a short and concise resume is better. Here's mine!")
 
-        # --- section 2: display pdf version ---
+        # --- section 2: display image version ---
 
         st.write("") # for spacing
 
-        # show pdf
-        with open("./resources/experience/davidchan-resume.pdf", "rb") as f:
-                base64_pdf = base64.b64encode(f.read()).decode('utf-8')
-        pdf_display = f'<iframe src="data:application/pdf;base64,{base64_pdf}" width="1000" height="800" type="application/pdf"></iframe>'
-        st.markdown(pdf_display, unsafe_allow_html=True)
+        # show image 
+        st.image("./resources/experience/resume.png")
 
         # --- section 3: download button ---
 
