@@ -41,7 +41,7 @@ class RenderUCSFBakarPage(HydraHeadApp):
         st.markdown(
             """
             ## UCSF BCHSI
-            _unpaid programming intern, June - August 2020_
+            _unpaid programming intern, June - August 2020_ \n
             [company website](https://bakarinstitute.ucsf.edu/) [project repository](https://github.com/BCHSI/philter-ucsf)
 
             ---
