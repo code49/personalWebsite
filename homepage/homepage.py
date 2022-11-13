@@ -42,7 +42,10 @@ class RenderHomePage(HydraHeadApp):
 
         with columns[1]:
 
-            st.image("./resources/homepage/homepage_header.png")
+            st.image(
+                image="./resources/homepage/homepage_header.png",
+                use_column_width="auto"
+            )
 
             st.write(
                 """
