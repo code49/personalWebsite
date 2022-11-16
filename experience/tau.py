@@ -41,8 +41,9 @@ class RenderTauPage(HydraHeadApp):
         st.markdown(
             """
             ## Tau Motors
-            _paid programming + electronics development intern, June - August 2022_
-            
+            _paid programming + electronics development intern, June - August 2022_ \n
+            [company website](https://www.taumotors.com/)
+
             ---
             """
         )
@@ -111,6 +112,6 @@ class RenderTauPage(HydraHeadApp):
             """
         )
 
-# for testing purposes
-thing = RenderTauPage()
-thing.run()
+# # for testing purposes
+# thing = RenderTauPage()
+# thing.run()

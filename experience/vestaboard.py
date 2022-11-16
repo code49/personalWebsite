@@ -41,8 +41,9 @@ class RenderVestaboardPage(HydraHeadApp):
         st.markdown(
             """
             ## Vestaboard
-            _paid programming intern, April - August 2021_
-            
+            _paid programming intern, April - August 2021_ \n
+            (company website)[https://www.vestaboard.com/]
+
             ---
             """
         )
@@ -100,6 +101,6 @@ class RenderVestaboardPage(HydraHeadApp):
             """
         )
 
-# for testing purposes
-thing = RenderVestaboardPage()
-thing.run()
+# # for testing purposes
+# thing = RenderVestaboardPage()
+# thing.run()

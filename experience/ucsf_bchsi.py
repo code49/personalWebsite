@@ -17,7 +17,7 @@ from hydralit import HydraHeadApp
 # wrapper class
 class RenderUCSFBakarPage(HydraHeadApp):
 
-    # page render function
+    # page render functionr
     def run(self):
 
         """
@@ -41,8 +41,9 @@ class RenderUCSFBakarPage(HydraHeadApp):
         st.markdown(
             """
             ## UCSF BCHSI
-            _unpaid programming intern, June - August 2020_
-            
+            _unpaid programming intern, June - August 2020_ \n
+            [company website](https://bakarinstitute.ucsf.edu/) [project repository](https://github.com/BCHSI/philter-ucsf)
+
             ---
             """
         )
@@ -121,6 +122,6 @@ class RenderUCSFBakarPage(HydraHeadApp):
             """
         )
 
-# for testing purposes
-thing = RenderUCSFBakarPage()
-thing.run()
+# # for testing purposes
+# thing = RenderUCSFBakarPage()
+# thing.run()
