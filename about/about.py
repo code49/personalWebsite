@@ -108,8 +108,8 @@ class RenderAboutPage(HydraHeadApp):
             to work with you on, or anything else!
 
             Here's my contact info:
-            - david@davidlechan.dev
-            - +1 (650) - 383 - 8954 
+            - davidlechan@gmail.com
+            - +1 (650)-383-8954 
 
             Also feel free to follow me:
             - [LinkedIn](https://linkedin.com/in/david-le-chan)
