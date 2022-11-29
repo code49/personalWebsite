@@ -59,6 +59,9 @@ class RenderProjectsPage(HydraHeadApp):
 
         st.write(
             """
+            #### carnegie mellon racing
+            [team website](https://www.carnegiemellonracing.org/)
+
             I'm currently working as a part of Carnegie Mellon's FSAE electric race car team on the energetics (electronics,
             both high and low voltage) subteam. We're currently working on designing and fabraicating the 'backplane,' 
             a circuit board that connects the grounded low voltage system together, for 23e, our team's submission for 
@@ -77,6 +80,9 @@ class RenderProjectsPage(HydraHeadApp):
 
         st.write(
             """
+            #### project ignite
+            [team website](https://projectignitecmu.org/)
+
             I'm also currently working as a mentor for project ignite, a club hosting yearly project collaborations
             with local Pittsburgh high schools. Project selections and high school applications are still in progress, but the 
             current plan is to work with another mentor to teach high schoolers about the fundamentals of tools such 
@@ -93,6 +99,9 @@ class RenderProjectsPage(HydraHeadApp):
 
         st.write(
             """
+            #### spotipy wrapper
+            [github repo](https://github.com/TheSharkhead2/SpotipyFunction_Set)
+
             In spring and summer of 2021, I worked with a friend, Theo Rode (@TheSharkhead2 on github!), to create a 
             python-based wrapper of the Spotipy library for gathering data from the Spotify API. We worked to address
             issues we found when trying to use Spotipy, such as random re-authentication requests, confusing and messy
@@ -104,12 +113,15 @@ class RenderProjectsPage(HydraHeadApp):
             """
         )
 
-        # --- section 4: COVID-19 book ---
+        # --- section 4: los altos history museum ---
 
         st.image("./resources/experience/lahm.jpg")
 
         st.write(
             """
+            #### los altos history museum
+            [museum website](https://www.losaltoshistory.org/)
+
             From September of 2018 to April of 2020, I volunteered at the Los Altos History Museum to help maintain their
             model railroad exhibit of my hometown. Given my fascination with model trains and the fact that I used to frequent
             the local museum when I was younger, I was overjoyed to get to help, helping pick and calibrate new train models when 
@@ -126,6 +138,8 @@ class RenderProjectsPage(HydraHeadApp):
 
         st.write(
             """
+            #### teaching in taiwan
+
             In the summer of 2018, I travelled to Taiwan alongside a group of other high school-level students to teach English to
             young children there. Over the course of 4 weeks, we visited a total of 5 schools all around the country, teaching everything
             from compound words (pictured above) to the basics of sentence structures, even helped them communicate their interests in
@@ -139,6 +153,6 @@ class RenderProjectsPage(HydraHeadApp):
             """
         )
 
-# # for testing purpsoes
-# thing = RenderProjectsPage()
-# thing.run()
+# for testing purpsoes
+thing = RenderProjectsPage()
+thing.run()
