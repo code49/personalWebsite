@@ -41,7 +41,8 @@ class RenderNuevaPage(HydraHeadApp):
         st.markdown(
             """
             ## The Nueva School
-            _high school student, August 2018 - June 2022_
+            _high school student, August 2018 - June 2022_ \n
+            _alumni representative, Class of 2022_ \n
 
             [school website](https://www.nuevaschool.org/)
             
@@ -61,7 +62,7 @@ class RenderNuevaPage(HydraHeadApp):
             the darkness of big data, to global health dynamics, where I learned about the different 
             factors that impact health policy across the world. I'm so glad to have gotten to meet
             so many influential students and faculty, and am excited to act as an alumni representative
-            for the class of 2022. 
+            for the class of 2022!
             """
         )
 
