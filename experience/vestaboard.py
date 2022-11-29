@@ -42,7 +42,7 @@ class RenderVestaboardPage(HydraHeadApp):
             """
             ## Vestaboard
             _paid programming intern, April - August 2021_ \n
-            (company website)[https://www.vestaboard.com/]
+            [company website](https://www.vestaboard.com/)
 
             ---
             """
