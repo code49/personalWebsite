@@ -41,9 +41,8 @@ def renderFooter():
     st.markdown("---")
 
     # gather random quote
-    with open('quotes.json', 'r') as in_file:
+    with open('quotes.json', 'r', encoding='utf-8') as in_file:
         possibilities = json.load(in_file)[:-1]
-        print(possibilities)
         quote_data = random.choice(possibilities)
 
     # markdowns with centering html
