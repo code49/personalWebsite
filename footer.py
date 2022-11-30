@@ -8,8 +8,12 @@ function definitions for creating standardised footers to streamlit/hydralit pag
 
 # streamlit/hydralit
 import streamlit as st
-# import hydralit as hy # there's a bug with hydralit so disabling for now
+import hydralit as hy
 import hydralit_components as hc
+
+# python builtins
+import json
+import random
 
 # ----- code -----
 
@@ -36,12 +40,17 @@ def renderFooter():
     # horizontal rule
     st.markdown("---")
 
+    # gather random quote
+    with open('quotes.json', 'r') as in_file:
+        possibilities = json.load(in_file)[:-1]
+        print(possibilities)
+        quote_data = random.choice(possibilities)
+
     # markdowns with centering html
     st.markdown(
-        """
+        f"""
         <p style='text-align: center; color: grey;'> <span style="font-size: 12px"> 
-        <em> "Guess what? You're going to wake up tomorrow and have an absolutely phenomenal day. 
-        And if your day isn't phenomenal, it'll still be better than today." </em> - Celine "starsmitten" Cheung 
+        <em>{quote_data["text"]}</em> - {quote_data["author"]} 
         </span></p>
         """, 
         unsafe_allow_html=True

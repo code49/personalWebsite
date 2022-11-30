@@ -55,13 +55,17 @@ class RenderProjectsPage(HydraHeadApp):
 
         # --- section 1: racecar ---
 
-        st.image("./resources/experience/racecar.jpg")
-
         st.write(
             """
             #### carnegie mellon racing
             [team website](https://www.carnegiemellonracing.org/)
+            """
+        )
 
+        st.image("./resources/experience/racecar.jpg")
+
+        st.write(
+            """
             I'm currently working as a part of Carnegie Mellon's FSAE electric race car team on the energetics (electronics,
             both high and low voltage) subteam. We're currently working on designing and fabraicating the 'backplane,' 
             a circuit board that connects the grounded low voltage system together, for 23e, our team's submission for 
@@ -76,13 +80,17 @@ class RenderProjectsPage(HydraHeadApp):
 
         # --- section 2: project iginte ---
         
-        st.image("./resources/experience/projectignite.png")
-
         st.write(
             """
             #### project ignite
             [team website](https://projectignitecmu.org/)
+            """
+        )
 
+        st.image("./resources/experience/projectignite.png")
+
+        st.write(
+            """
             I'm also currently working as a mentor for project ignite, a club hosting yearly project collaborations
             with local Pittsburgh high schools. Project selections and high school applications are still in progress, but the 
             current plan is to work with another mentor to teach high schoolers about the fundamentals of tools such 
@@ -95,13 +103,17 @@ class RenderProjectsPage(HydraHeadApp):
 
         # --- section 3: spotipy ---
 
-        st.image("./resources/experience/spotipy.png")
-
         st.write(
             """
             #### spotipy wrapper
             [github repo](https://github.com/TheSharkhead2/SpotipyFunction_Set)
+            """
+        )
 
+        st.image("./resources/experience/spotipy.png")
+
+        st.write(
+            """
             In spring and summer of 2021, I worked with a friend, Theo Rode (@TheSharkhead2 on github!), to create a 
             python-based wrapper of the Spotipy library for gathering data from the Spotify API. We worked to address
             issues we found when trying to use Spotipy, such as random re-authentication requests, confusing and messy
@@ -115,13 +127,17 @@ class RenderProjectsPage(HydraHeadApp):
 
         # --- section 4: los altos history museum ---
 
-        st.image("./resources/experience/lahm.jpg")
-
         st.write(
             """
             #### los altos history museum
             [museum website](https://www.losaltoshistory.org/)
+            """
+        )
 
+        st.image("./resources/experience/lahm.jpg")
+
+        st.write(
+            """
             From September of 2018 to April of 2020, I volunteered at the Los Altos History Museum to help maintain their
             model railroad exhibit of my hometown. Given my fascination with model trains and the fact that I used to frequent
             the local museum when I was younger, I was overjoyed to get to help, helping pick and calibrate new train models when 
@@ -134,12 +150,16 @@ class RenderProjectsPage(HydraHeadApp):
 
         # --- section 5: Taiwan ---
 
+        st.write(
+            """
+            #### teaching in taiwan
+            """
+        )
+
         st.image("./resources/experience/taiwan.jpg")
 
         st.write(
             """
-            #### teaching in taiwan
-
             In the summer of 2018, I travelled to Taiwan alongside a group of other high school-level students to teach English to
             young children there. Over the course of 4 weeks, we visited a total of 5 schools all around the country, teaching everything
             from compound words (pictured above) to the basics of sentence structures, even helped them communicate their interests in
