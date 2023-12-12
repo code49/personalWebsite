@@ -44,9 +44,11 @@ class RenderClassnotesPage(HydraHeadApp):
 
             ---
 
-            One of my more recent "mini" projects is creating an archive-style repository of all the notes/homework 
+            One of my more recent "mini" projects is creating an archive-style repository of all the notes 
             from my classes, both so that I can look back on them later and so that others can use them in their own 
-            studies. Feel free to look around!
+            studies. Note that some are simply compilations of exam review sheets, as I didn't take formal notes
+            about the material in the course. Here are a few of the most interesting ones, as well as a list of 
+            all of the ones I have done so far.
             """
         )
 
@@ -55,7 +57,7 @@ class RenderClassnotesPage(HydraHeadApp):
         st.markdown(
             """
             <iframe 
-            src="https://drive.google.com/embeddedfolderview?id=1rv0GFVqEEd_-pZMyiA0ZV001Yg4GA_g7#list" 
+            src="https://drive.google.com/drive/folders/1Ni_yWcpKrmQ9Lyz6Fuxctz1KMv9KX1kC?usp=drive_link" 
             style="width:100%; 
             height:600px; 
             border:0;"></iframe>""",

@@ -69,16 +69,29 @@ class RenderCarnegiePage(HydraHeadApp):
             Here's a list of the classes I've taken at CMU so far, organised by subject area:
 
             - Engineering
+                - 12-100: Introduction to Civil and Environmental Engineering
                 - 18-100: Introduction to Electrical and Computer Engineering
+                - 18-240: Structure and Design of Digital Systems
+            - Computer Sciences
+                - 15-122: Principles of Imperative Computation
             - Mathematics
                 - 21-120: Differential and Integral Calculus
+                - 21-122: Integral and Approximate Calculus
+                - 21-127: Concepts of Mathematics
+                - 36-219: Introduction to Probability Theory and Random Processes
             - Sciences
                 - Physics
                     - 33-141: Physics I for Engineers
+                    - 33-142: Physics II for Engineers
             - Humanities
+                - Design
+                    - 51-173: Human Experiences in Design
+                - Law
+                    - 66-215: The Innovation Trials
                 - English
                     - 76-106: Writing about Data
                     - 76-108: Writing about Public Problems
+
             """
         )
 
