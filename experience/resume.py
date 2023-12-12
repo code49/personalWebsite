@@ -68,23 +68,23 @@ class RenderResumePage(HydraHeadApp):
             file_name='davidchan-resume-digital.pdf'
         )
 
-        with open("./resources/experience/resume_printable.pdf", "rb") as pdf_file:
-            PDF_byte_printable = pdf_file.read()
+        # with open("./resources/experience/resume_printable.pdf", "rb") as pdf_file:
+        #     PDF_byte_printable = pdf_file.read()
 
-        st.download_button(
-            label="Download Printable PDF",
-            data=PDF_byte_printable,
-            file_name='davidchan-resume-printable.pdf'
-        )
+        # st.download_button(
+        #     label="Download Printable PDF",
+        #     data=PDF_byte_printable,
+        #     file_name='davidchan-resume-printable.pdf'
+        # )
 
-        with open("./resources/experience/resume_simple.pdf", "rb") as pdf_file:
-            PDF_byte_simple = pdf_file.read()
+        # with open("./resources/experience/resume_simple.pdf", "rb") as pdf_file:
+        #     PDF_byte_simple = pdf_file.read()
 
-        st.download_button(
-            label="Download Simple PDF",
-            data=PDF_byte_simple,
-            file_name='davidchan-resume-simple.pdf'
-        )
+        # st.download_button(
+        #     label="Download Simple PDF",
+        #     data=PDF_byte_simple,
+        #     file_name='davidchan-resume-simple.pdf'
+        # )
 
 # # for testing purpsoes
 # thing = RenderResumePage()
