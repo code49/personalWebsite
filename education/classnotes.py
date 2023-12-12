@@ -57,7 +57,7 @@ class RenderClassnotesPage(HydraHeadApp):
         st.markdown(
             """
             <iframe 
-            src="https://drive.google.com/drive/folders/1Ni_yWcpKrmQ9Lyz6Fuxctz1KMv9KX1kC?usp=drive_link" 
+            src="https://drive.google.com/drive/folders/1Ni_yWcpKrmQ9Lyz6Fuxctz1KMv9KX1kC?usp=sharing" 
             style="width:100%; 
             height:600px; 
             border:0;"></iframe>""",
